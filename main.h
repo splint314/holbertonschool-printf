@@ -8,6 +8,10 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+
+int print_char(va list);
+int print_string(va list);
+int print_int(va list)
 int _printf(const char *format, ...);
 
 #endif /* MAIN_H */
