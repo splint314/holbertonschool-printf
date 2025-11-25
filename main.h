@@ -9,5 +9,7 @@
 #include <unistd.h>
 
 int _printf(const char *format, ...);
+void print_string(const char *s);
+int _putchar(int c);
 
 #endif /* MAIN_H */
