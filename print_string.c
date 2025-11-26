@@ -1,7 +1,17 @@
-#include <main.h>
+#include "main.h"
 
-int int print_string(va list, args);
+int print_string(va_list args)
 {
+	char *s = va_arg(args, char *);
+	int count = 0;
 
+	if (s == NULL)
+		s = "(null)";
 
+	while (*s)
+	{
+		_putchar(*s++);
+		count++;
+	}
+	return (count);
 }
