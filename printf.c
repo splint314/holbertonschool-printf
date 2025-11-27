@@ -41,6 +41,10 @@ int _printf(const char *format, ...)
             _putchar('%');
             count++;
         }
+        else if (format[i] == 'd' || format[i] == 'i')  
+        {
+            count += print_int(args);
+        }
         else
         {
             _putchar('%');
