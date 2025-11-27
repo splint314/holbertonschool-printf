@@ -2,10 +2,11 @@
 
 int print_int(va_list args)
 {
-	long n = va_arg(args, int);
+	int n = va_arg(args, int);  // ← Change: long → int
 	int count = 0;
-	char buf[32];
+	char buf[12];  // ← Change: 32 → 12 (suffisant)
 	int i = 0;
+	unsigned int num;  // ← AJOUTE cette variable
 
 	if (n == 0)
 	{
@@ -17,21 +18,25 @@ int print_int(va_list args)
 	{
 		_putchar('-');
 		count++;
-		n = -n;
+		num = (unsigned int)(-n);  // ← Change: utilise unsigned
+	}
+	else
+	{
+		num = (unsigned int)n;  // ← AJOUTE cette ligne
 	}
 
-	while (n > 0)
+	while (num > 0)  // ← Change: n → num
 	{
-		buf[i++] = '0' + (n % 10);
-		n /= 10;
+		buf[i++] = '0' + (num % 10);
+		num /= 10;  // ← Change: n → num
 	}
 
-	while (i-- > 0)
+	while (i > 0)  // ← Change: i-- > 0 → i > 0
 	{
+		i--;  // ← Décrémente ici
 		_putchar(buf[i]);
 		count++;
 	}
 
 	return (count);
 }
-
