@@ -1,0 +1,127 @@
+.TH _PRINTF November 28th 2025 "1.0" "Holberton School" "User Commands Manual"
+.SH NAME
+_printf \- custom implementation of printf
+
+.SH SYNOPSIS
+.B #include "main.h"
+.sp
+.BI "int _printf(const char *" format ", ...);"
+
+.SH DESCRIPTION
+The
+.BR _printf ()
+function produces output according to a
+.I format
+string that specifies how subsequent arguments are converted for output.
+
+This function is a simplified version of the standard
+.BR printf (3)
+function from the C standard library.
+
+.SS Format String
+The format string is a character string composed of zero or more directives:
+ordinary characters (not
+.BR % ),
+which are copied unchanged to the output stream, and conversion specifications,
+each of which results in fetching zero or more subsequent arguments.
+
+Each conversion specification is introduced by the character
+.BR % ,
+and ends with a
+.I "conversion specifier".
+
+.SS Conversion Specifiers
+The conversion specifiers and their meanings are:
+
+.TP
+.B c
+The
+.I int
+argument is converted to an
+.IR "unsigned char" ,
+and the resulting character is written.
+
+.TP
+.B s
+The
+.I "const char *"
+argument is expected to be a pointer to a character array (string).
+Characters from the array are written up to (but not including) a terminating
+null byte ('\\0'). If the argument is NULL, the string "(null)" is written.
+
+.TP
+.B d, i
+The
+.I int
+argument is converted to signed decimal notation.
+
+.TP
+.B %
+A '%' character is written. No argument is converted. The complete conversion
+specification is '%%'.
+
+.SH RETURN VALUE
+Upon successful return, the
+.BR _printf ()
+function returns the number of characters printed (excluding the null byte
+used to end output to strings).
+
+If an error occurs, a negative value is returned.
+
+.SH EXAMPLES
+To print "Hello, World!":
+.PP
+.in +4n
+.EX
+_printf("Hello, World!\\n");
+.EE
+.in
+
+To print an integer:
+.PP
+.in +4n
+.EX
+_printf("The number is %d\\n", 42);
+.EE
+.in
+
+To print a character and a string:
+.PP
+.in +4n
+.EX
+_printf("Character: %c, String: %s\\n", 'A', "test");
+.EE
+.in
+
+To print a percent sign:
+.PP
+.in +4n
+.EX
+_printf("100%% complete\\n");
+.EE
+.in
+
+.SH NOTES
+This is a simplified implementation and does not support:
+.IP \(bu 2
+Field width
+.IP \(bu
+Precision
+.IP \(bu
+Length modifiers
+.IP \(bu
+Flag characters
+.IP \(bu
+Other conversion specifiers (u, o, x, X, p, etc.)
+
+.SH BUGS
+No known bugs at this time.
+
+.SH SEE ALSO
+.BR printf (3),
+.BR write (2)
+
+.SH AUTHOR
+Written by Kevin Rigal and Lucas Lupon for Holberton School.
+
+.SH COPYRIGHT
