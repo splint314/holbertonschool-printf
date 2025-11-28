@@ -1,5 +1,6 @@
 Our flowchart:
-https://imgur.com/a/CxMYUZ3
+Inline-style: 
+![alt text](https://imgur.com/a/CxMYUZ3 "Logo Title Text 1")
 
 
 _printf:
