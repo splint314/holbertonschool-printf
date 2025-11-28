@@ -1,3 +1,7 @@
+Our flowchart:
+https://imgur.com/a/CxMYUZ3
+
+
 _printf:
 
 A custom implementation of the C standard library function printf().
