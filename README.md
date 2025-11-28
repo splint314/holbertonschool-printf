@@ -41,12 +41,12 @@ c#include "main.h"
 
 int main(void)
 {
-    _printf("Hello, %s!\n", "World");
-    _printf("Character: %c\n", 'A');
-    _printf("Number: %d\n", 42);
-    _printf("Percentage: %%\n");
+_printf("Hello, %s!\n", "World");
+_printf("Character: %c\n", 'A');
+_printf("Number: %d\n", 42);
+_printf("Percentage: %%\n");
     
-    return (0);
+return (0);
 }
 
 Output:
