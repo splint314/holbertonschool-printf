@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_int - Prints an integer
+ * @args: List of arguments containing the integer
+ *
+ * Return: Number of characters printed
+ */
 int print_int(va_list args)
 {
 	int n = va_arg(args, int);
@@ -27,7 +33,8 @@ int print_int(va_list args)
 
 	while (num > 0)
 	{
-		buf[i++] = '0' + (num % 10);
+		buf[i] = (num % 10) + '0';
+		i++;
 		num /= 10;
 	}
 
