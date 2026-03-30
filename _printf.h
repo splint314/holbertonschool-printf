@@ -14,5 +14,8 @@ int print_int(int n);
 
 /* low level output */
 int _putchar(char c);
+int print_char(int c);
+int print_string(char *s);
+int print_int(int n);
 
 #endif
