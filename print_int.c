@@ -13,12 +13,12 @@ int count = 0;
 
 if (n < 0)
 
-count += _putchar('-');
+count += write;
 n = -n;
 
 if (n < 0)
 {
-count += _putchar('-');
+count += write('-');
 n = -n;
 }
 

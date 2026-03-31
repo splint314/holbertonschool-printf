@@ -8,7 +8,7 @@
 */
 int print_char(int c)
 {
-if (_putchar(c) == -1)
+if (write(c) == -1)
 return (-1);
 return (1);
 }

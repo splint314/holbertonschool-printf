@@ -17,7 +17,7 @@ s = "(null)";
 
 while (s[i])
 {
-_putchar(s[i]);
+write(s[i]);
 i++;
 }
 return (i);
