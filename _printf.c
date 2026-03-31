@@ -13,11 +13,9 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-
 	va_start(ap, format);
 	i = 0;
 	count = 0;
-
 	while (format[i] != '\0')
 	{
 		if (format[i] != '%')
@@ -32,27 +30,22 @@ int _printf(const char *format, ...)
 				va_end(ap);
 				return (-1);
 			}
-
 			if (format[i + 1] == 'c')
 				count += print_char(va_arg(ap, int));
 			else if (format[i + 1] == 's')
 				count += print_string(va_arg(ap, char *));
 			else if (format[i + 1] == '%')
 				count += print_char('%');
-			else if (format[i + 1] == 'd')
-				count += print_int(va_arg(ap, int));
-			else if (format[i + 1] == 'i')
+			else if (format[i + 1] == 'd' || format[i + 1] == 'i')
 				count += print_int(va_arg(ap, int));
 			else
 			{
 				va_end(ap);
 				return (-1);
 			}
-
 			i += 2;
 		}
 	}
-
 	va_end(ap);
 	return (count);
 }
