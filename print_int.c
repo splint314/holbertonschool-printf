@@ -18,7 +18,7 @@ int print_int(int n)
 	{
 		write(1, "-", 1);
 		count++;
-		num = -n;
+		num = (unsigned int)(-(n + 1)) + 1;
 	}
 	else
 		num = n;
