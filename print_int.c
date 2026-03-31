@@ -9,18 +9,23 @@
 int print_int(int n)
 
 {
-int count = 0;
+	unsigned int num;
+	int count;
 
-if (n < 0)
+	count = 0;
 
-count += write;
-n = -n;
+	if (n < 0)
+	{
+		write(1, "-", 1);
+		count++;
+		num = -n;
+	}
+	else
+		num = n;
 
-if (n < 0)
-{
-count += write('-');
-n = -n;
-}
+	if (num >= 10)
+		count += print_int(num / 10);
+	count += print_char((num % 10) + '0');
 
-return (count);
+	return (count);
 }
