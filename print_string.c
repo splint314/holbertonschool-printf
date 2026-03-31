@@ -10,15 +10,20 @@
 int print_string(char *s)
 
 {
-int i = 0;
+	int i, count;
 
-if (!s)
-s = "(null)";
+	if (s == NULL)
+	s = "(null)";
 
-while (s[i])
-{
-_putchar(s[i]);
-i++;
-}
-return (i);
+	i = 0;
+	count = 0;
+
+	while (s[i] != '\0')
+	{
+		write(1, &s[i], 1);
+		i++;
+		count++;
+	}
+
+	return (count);
 }
