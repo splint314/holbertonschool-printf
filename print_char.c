@@ -8,6 +8,9 @@
 */
 int print_char(int c)
 {
-	write(1, &c, 1);
+	char ch;
+
+	ch = c;
+	write(1, &ch, 1);
 	return (1);
 }
