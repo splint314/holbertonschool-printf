@@ -40,8 +40,8 @@ int _printf(const char *format, ...)
 				count += print_int(va_arg(ap, int));
 			else
 			{
-				va_end(ap);
-				return (-1);
+				count += print_char('%');
+				count += print_char(format[i + 1]);
 			}
 			i += 2;
 		}
