@@ -37,6 +37,7 @@ This project was made in groups of 2
 - %c → character  
 - %s → string  
 - %d / %i → integer  
+- %% → prints a percent sign
 
 Handles NULL strings and negative integers.
 
@@ -57,6 +58,7 @@ Handles NULL strings and negative integers.
 2. Clone our repository by using the following command
 git clone https://github.com/splint314/holbertonschool-printf
 
+
 ## 🛠️ Compilation
 
 ```
@@ -64,6 +66,7 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o printf
 ```
 
 ## ▶️ Usage
+You'll need a main.c file like this:<br>
 
 ```c
 #include "_printf.h"
@@ -74,6 +77,9 @@ int main(void)
     return (0);
 }
 ```
+
+once you wrote your main.c file use ./printf for displaying it in ur terminal
+
 ## 📘 Manual
 
 man ./man_3_printf
@@ -121,8 +127,8 @@ String:[I am a string !]<br>
 
 ![Description](https://github.com/splint314/holbertonschool-printf/blob/main/flowchart.png?raw=true)
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 | Jonathan Martin | [John-Natty](https://github.com/John-Natty) |<br>
-| Kevin Rigal | [@splint314](https://github.com/splint314) |
+| Kevin Rigal | [splint314](https://github.com/splint314) |
 
 Students at Holberton School Toulouse.
