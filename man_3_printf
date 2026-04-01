@@ -1,0 +1,101 @@
+.TH _PRINTF 3 "March 2026" "_printf project" "Custom Library Functions"
+.SH NAME
+_printf \- produces output according to a format
+
+.SH SYNOPSIS
+.B #include "main.h"
+.PP
+.B int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+The
+.B _printf
+function produces output according to a format string and writes it to the
+standard output.
+
+The format string is composed of ordinary characters and conversion
+specifiers. Ordinary characters are printed as they appear. A conversion
+specifier begins with the percent character
+.B %
+and is followed by a character that determines how the corresponding argument
+is printed.
+
+This implementation of
+.B _printf
+supports the following conversion specifiers:
+.TP
+.B %c
+Prints a single character.
+.TP
+.B %s
+Prints a string.
+.TP
+.B %%
+Prints a percent sign.
+.TP
+.B %d
+Prints a decimal integer.
+.TP
+.B %i
+Prints an integer.
+
+If the character following
+.B %
+is not a valid supported conversion specifier, the function prints the percent
+sign followed by that character.
+
+If the format string is
+.B NULL
+or if a percent sign appears at the end of the format string with no following
+specifier, the function returns
+.BR -1 .
+
+.SH RETURN VALUE
+Upon successful return,
+.B _printf
+returns the number of characters printed, excluding the terminating null byte.
+
+On error, the function returns
+.BR -1 .
+
+.SH EXAMPLES
+.B _printf("Hello %s\\n", "world");
+.PP
+Output:
+.PP
+Hello world
+
+.PP
+.B _printf("Character: %c\\n", 'A');
+.PP
+Output:
+.PP
+Character: A
+
+.PP
+.B _printf("Value: %d\\n", 1234);
+.PP
+Output:
+.PP
+Value: 1234
+
+.PP
+.B _printf("%K\\n");
+.PP
+Output:
+.PP
+%K
+
+.SH FILES
+.B main.h
+Header file containing the prototype of
+.BR _printf ,
+as well as the prototypes of helper functions.
+
+.SH SEE ALSO
+.BR printf (3)
+
+.SH AUTHORS
+Jonathan MARTIN
+.br
+Kevin RIGAL
