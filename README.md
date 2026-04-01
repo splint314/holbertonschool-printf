@@ -6,13 +6,33 @@ A custom implementation of the C `printf` function, built from scratch.
 ![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange)
 ![Project](https://img.shields.io/badge/Project-Holberton-success)
 
+## 📚 Table of Contents
 
-## Description
+<details>
+<summary>📖 Click to expand</summary>
+
+<br>
+
+* 📖 [Description](#description)
+* ✨ [Features](#features)
+* 🗂️ [Project Structure](#project-structure)
+* ⚙️ [Installation](#installation)
+* 🛠️ [Compilation](#compilation)
+* ▶️ [Usage](#usage)
+* 📘 [Manual](#manual)
+* ⚠️ [Limitations](#limitations)
+* 🧪 [Valgrind](#valgrind)
+* 🔄 [Flowchart](#flowchart)
+* 👨‍💻 [Author](#author)
+
+</details>
+
+## 📖 Description
 
 `_printf` is a remaked version of the standard `printf` function.  
 It formats and prints data to the standard output without using the standard library.
 This project was made in groups of 2
-## Features
+## ✨ Features
 
 - %c → character  
 - %s → string  
@@ -20,7 +40,7 @@ This project was made in groups of 2
 
 Handles NULL strings and negative integers.
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```
 .
@@ -31,19 +51,19 @@ Handles NULL strings and negative integers.
 └── _printf.c
 ```
 
-## Installation
+## ⚙️ Installation
 1. Open ur terminal and navigate into the folder where u want to put the program
 
 2. Clone our repository by using the following command
 git clone https://github.com/splint314/holbertonschool-printf
 
-## Compilation
+## 🛠️ Compilation
 
 ```
 gcc -Wall -Werror -Wextra -pedantic *.c -o printf
 ```
 
-## Usage
+## ▶️ Usage
 
 ```c
 #include "_printf.h"
@@ -54,14 +74,17 @@ int main(void)
     return (0);
 }
 ```
+## 📘 Manual
 
-## Limitations
+man ./man_3_printf
+
+## ⚠️ Limitations
 
 - No flags
 - No width/precision
 - No floats
 
-## Valgrind 
+## 🧪 Valgrind 
 
 ==8252== Memcheck, a memory error detector<br>
 ==8252== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.<br>
@@ -94,12 +117,12 @@ String:[I am a string !]<br>
 ==8252== For lists of detected and suppressed errors, rerun with: -s<br>
 ==8252== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)<br>
 
-## Flowchart
+## 🔄 Flowchart
 
 ![Description](https://github.com/splint314/holbertonschool-printf/blob/main/flowchart.png?raw=true)
 
-## Author
-| Jonathan Martin | [John-Natty](https://github.com/John-Natty) |
+## 👨‍💻 Author
+| Jonathan Martin | [John-Natty](https://github.com/John-Natty) |<br>
 | Kevin Rigal | [@splint314](https://github.com/splint314) |
 
 Students at Holberton School Toulouse.
