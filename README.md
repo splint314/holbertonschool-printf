@@ -29,9 +29,10 @@ A custom implementation of the C `printf` function, built from scratch.
 
 ## 📖 Description
 
-`_printf` is a remaked version of the standard `printf` function.  
+It's a reimplementation of the C `printf` function 
 It formats and prints data to the standard output without using the standard library.
-This project was made in groups of 2
+This project was completed in pairs.
+
 ## ✨ Features
 
 - %c → character  
@@ -53,9 +54,9 @@ Handles NULL strings and negative integers.
 ```
 
 ## ⚙️ Installation
-1. Open ur terminal and navigate into the folder where u want to put the program
+1. Open your terminal and navigate to the directory where you want to clone the project
 
-2. Clone our repository by using the following command
+2. Clone the repository using the following command:
 git clone https://github.com/splint314/holbertonschool-printf
 
 
@@ -66,7 +67,7 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o printf
 ```
 
 ## ▶️ Usage
-You'll need a main.c file like this:<br>
+Once you have written your main.c file like this:<br>
 
 ```c
 #include "_printf.h"
@@ -78,9 +79,11 @@ int main(void)
 }
 ```
 
-once you wrote your main.c file use ./printf for displaying it in ur terminal
+run ./printf to display the output in your terminal
 
 ## 📘 Manual
+
+Use the following command to access the manual:
 
 man ./man_3_printf
 
@@ -131,4 +134,4 @@ String:[I am a string !]<br>
 | Jonathan Martin | [John-Natty](https://github.com/John-Natty) |<br>
 | Kevin Rigal | [splint314](https://github.com/splint314) |
 
-Students at Holberton School Toulouse.
+Students at Holberton School, Toulouse.
