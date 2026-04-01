@@ -13,7 +13,7 @@ A custom implementation of the C `printf` function, built from scratch.
 
 <br>
 
-* 📖 [Description](#description)
+* 📖 [Description](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#-description)
 * ✨ [Features](#features)
 * 🗂️ [Project Structure](#project-structure)
 * ⚙️ [Installation](#installation)
