@@ -1,4 +1,4 @@
-README# 🚀 _printf
+ ## 🚀 README of the group project _printf 
 
 A custom implementation of the C `printf` function, built from scratch.
 
@@ -31,6 +31,12 @@ Handles NULL strings and negative integers.
 └── _printf.c
 ```
 
+## Installation
+1. Open ur terminal and navigate into the folder where u want to put the program
+
+2. Clone our repository by using the following command
+git clone https://github.com/splint314/holbertonschool-printf
+
 ## Compilation
 
 ```
@@ -57,36 +63,36 @@ int main(void)
 
 ## Valgrind 
 
-==8252== Memcheck, a memory error detector
-==8252== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==8252== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==8252== Command: ./a.out
-==8252== 
-Let's try to printf a simple sentence.
-Let's try to printf a simple sentence.
-Length:[39, 39]
-Length:[39, 39]
-Negative:[-762534]
-Negative:[-762534]
-Unsigned:[%u]
-Unsigned:[2147484671]
-Unsigned octal:[%o]
-Unsigned octal:[20000001777]
-Unsigned hexadecimal:[%x, %X]
-Unsigned hexadecimal:[800003ff, 800003FF]
-Character:[H]
-Character:[H]
-String:[I am a string !]
-String:[I am a string !]
-==8252== 
-==8252== HEAP SUMMARY:
-==8252==     in use at exit: 0 bytes in 0 blocks
-==8252==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
-==8252== 
-==8252== All heap blocks were freed -- no leaks are possible
-==8252== 
-==8252== For lists of detected and suppressed errors, rerun with: -s
-==8252== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==8252== Memcheck, a memory error detector<br>
+==8252== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.<br>
+==8252== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info<br>
+==8252== Command: ./a.out<br>
+==8252== <br>
+Let's try to printf a simple sentence.<br>
+Let's try to printf a simple sentence.<br>
+Length:[39, 39]<br>
+Length:[39, 39]<br>
+Negative:[-762534]<br>
+Negative:[-762534]<br>
+Unsigned:[%u]<br>
+Unsigned:[2147484671]<br>
+Unsigned octal:[%o]<br>
+Unsigned octal:[20000001777]<br>
+Unsigned hexadecimal:[%x, %X]<br>
+Unsigned hexadecimal:[800003ff, 800003FF]<br>
+Character:[H]<br>
+Character:[H]<br>
+String:[I am a string !]<br>
+String:[I am a string !]<br>
+==8252== <br>
+==8252== HEAP SUMMARY:<br>
+==8252==     in use at exit: 0 bytes in 0 blocks<br>
+==8252==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated<br>
+==8252== <br>
+==8252== All heap blocks were freed -- no leaks are possible<br>
+==8252== <br>
+==8252== For lists of detected and suppressed errors, rerun with: -s<br>
+==8252== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)<br>
 
 ## Flowchart
 
@@ -95,3 +101,5 @@ String:[I am a string !]
 ## Author
 | Jonathan Martin | [John-Natty](https://github.com/John-Natty) |
 | Kevin Rigal | [@splint314](https://github.com/splint314) |
+
+Students at Holberton School Toulouse.
