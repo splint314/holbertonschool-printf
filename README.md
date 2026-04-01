@@ -14,16 +14,16 @@ A custom implementation of the C `printf` function, built from scratch.
 <br>
 
 * 📖 [Description](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#-description)
-* ✨ [Features](#features)
-* 🗂️ [Project Structure](#project-structure)
-* ⚙️ [Installation](#installation)
-* 🛠️ [Compilation](#compilation)
-* ▶️ [Usage](#usage)
-* 📘 [Manual](#manual)
-* ⚠️ [Limitations](#limitations)
-* 🧪 [Valgrind](#valgrind)
-* 🔄 [Flowchart](#flowchart)
-* 👨‍💻 [Author](#author)
+* ✨ [Features](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#-features)
+* 🗂️ [Project Structure](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#%EF%B8%8F-project-structure)
+* ⚙️ [Installation](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#%EF%B8%8F-installation)
+* 🛠️ [Compilation](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#%EF%B8%8F-compilation)
+* ▶️ [Usage](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#%EF%B8%8F-usage)
+* 📘 [Manual](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#-manual)
+* ⚠️ [Limitations](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#%EF%B8%8F-limitations)
+* 🧪 [Valgrind](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#-valgrind)
+* 🔄 [Flowchart](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#-flowchart)
+* 👨‍💻 [Author](https://github.com/splint314/holbertonschool-printf?tab=readme-ov-file#%E2%80%8D-author)
 
 </details>
 
