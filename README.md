@@ -132,6 +132,6 @@ String:[I am a string !]<br>
 
 ## 👨‍💻 Authors
 | Jonathan Martin | [John-Natty](https://github.com/John-Natty) |<br>
-| Kevin Rigal | [splint314](https://github.com/splint314) |
+| Kevin Rigal | [sharingankid](https://github.com/sharingankid) |
 
 Students at Holberton School, Toulouse.
